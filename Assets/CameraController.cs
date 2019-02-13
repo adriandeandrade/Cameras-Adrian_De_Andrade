@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private Transform firstPersonTarget;
+    [SerializeField] private float mouseSensitivity;
     [SerializeField] private float offsetPadding;
     [SerializeField] private float dampingTime;
     [SerializeField] private float toggleDampingTime;
@@ -28,6 +29,9 @@ public class CameraController : MonoBehaviour
         {
             ToggleFirstPerson();
         }
+
+        float horizontal = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float vertical = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
     }
 
     private void LateUpdate()

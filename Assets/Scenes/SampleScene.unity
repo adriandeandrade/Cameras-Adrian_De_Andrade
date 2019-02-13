@@ -231,7 +231,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c3ed41e05c14de458dce9ad2e27a270, type: 2}
+  - {fileID: 2100000, guid: 55932a12d46b2b948a793e900b154ef2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -369,7 +369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 758539081}
-  thirdPersonTarget: {fileID: 2076764304}
+  firstPersonTarget: {fileID: 2076764304}
+  mouseSensitivity: 10
   offsetPadding: 0.5
   dampingTime: 3
   toggleDampingTime: 5
@@ -490,7 +491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2076764304}
   m_Layer: 0
-  m_Name: ThirdPersonTarget
+  m_Name: FirstPersonTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
