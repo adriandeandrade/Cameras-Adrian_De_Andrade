@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -372,7 +372,7 @@ MonoBehaviour:
   firstPersonTarget: {fileID: 2076764304}
   mouseSensitivity: 10
   offsetPadding: 0.5
-  dampingTime: 3
+  dampingTime: 10
   toggleDampingTime: 5
   toggleFirstPerson: 0
 --- !u!1 &758539076
@@ -408,6 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
+  lookSensitivity: 0
 --- !u!65 &758539078
 BoxCollider:
   m_ObjectHideFlags: 0
